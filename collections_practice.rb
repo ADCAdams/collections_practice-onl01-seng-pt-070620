@@ -50,9 +50,7 @@ end
 
 def add_s(stringArray)
   stringArray.collect.each_with_index do |element, index| 
-    if index != 1 
-      element << "s"
-    end
+    element << "s" if index != 1 
    end
    return stringArray
 end 
